@@ -1,0 +1,268 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kaju Katli Cafe</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f8f8f8;
+}
+
+header{
+background:#111827;
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#f59e0b;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+}
+
+.hero{
+height:90vh;
+background:url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1600') center/cover;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+}
+
+.hero h1{
+font-size:60px;
+}
+
+.hero p{
+font-size:22px;
+margin-top:10px;
+}
+
+.btn{
+padding:12px 25px;
+background:#f59e0b;
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+margin:10px;
+text-decoration:none;
+display:inline-block;
+}
+
+section{
+padding:60px 8%;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:30px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.card h3{
+padding:10px;
+}
+
+.card p{
+padding:0 10px 10px;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:15px;
+}
+
+.gallery img{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:10px;
+}
+
+.review{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 5px 10px rgba(0,0,0,.1);
+}
+
+.contact{
+background:#111827;
+color:white;
+text-align:center;
+}
+
+footer{
+background:black;
+color:white;
+text-align:center;
+padding:20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">☕ Kaju Katli Cafe</div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#gallery">Gallery</a>
+<a href="#reviews">Reviews</a>
+<a href="#contact">Contact</a>
+<a href="login.html">Login</a>
+<a href="login.html">Sign Up</a>
+</nav>
+</header>
+
+<section class="hero" id="home">
+<h1>Kaju Katli Cafe</h1>
+<p>Fresh Coffee, Delicious Food & Memorable Moments</p>
+
+<div>
+<a href="login.html" class="btn">Login</a>
+<a href="login.html" class="btn">Sign Up</a>
+</div>
+</section>
+
+<section>
+
+<h2 class="section-title">Featured Items</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800">
+<h3>Cappuccino</h3>
+<p>Rs. 180</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800">
+<h3>Burger</h3>
+<p>Rs. 250</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800">
+<h3>Pizza</h3>
+<p>Rs. 450</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="gallery">
+
+<h2 class="section-title">Gallery</h2>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800">
+<img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800">
+<img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=800">
+<img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800">
+
+</div>
+
+</section>
+
+<section id="reviews">
+
+<h2 class="section-title">Customer Reviews</h2>
+
+<div class="cards">
+
+<div class="review">
+★★★★★
+<p>Best coffee in Kalanki. Highly recommended.</p>
+</div>
+
+<div class="review">
+★★★★★
+<p>Friendly staff and delicious momo.</p>
+</div>
+
+<div class="review">
+★★★★★
+<p>Great place for students to study and relax.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="contact" id="contact">
+
+<h2>Contact Us</h2>
+
+<br>
+
+<p>📍 Kalanki-14, Kathmandu</p>
+<p>Top Floor, Falana Building</p>
+
+<br>
+
+<p>📞 980820922</p>
+<p>📧 KajuKatliCafe@gmail.com</p>
+
+<br>
+
+<a href="login.html" class="btn">
+Order Now
+</a>
+
+</section>
+
+<footer>
+© 2026 Kaju Katli Cafe
+</footer>
+
+</body>
+</html>
+```

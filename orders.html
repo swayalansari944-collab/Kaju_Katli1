@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Orders - Kaju Katli Cafe</title>
+
+<style>
+
+body{
+font-family:Arial,sans-serif;
+background:#f5f5f5;
+padding:30px;
+}
+
+h1{
+text-align:center;
+margin-bottom:20px;
+}
+
+.thankyou{
+background:#dcfce7;
+color:#166534;
+padding:15px;
+border-radius:10px;
+text-align:center;
+font-size:20px;
+font-weight:bold;
+margin-bottom:20px;
+}
+
+.order{
+background:white;
+padding:15px;
+margin-bottom:15px;
+border-radius:10px;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+</style>
+
+</head>
+<body>
+
+<h1>Your Orders</h1>
+
+<div class="thankyou">
+🎉 Thank You For Visiting Kaju Katli Cafe! <br>
+Please Visit Again ❤️
+</div>
+
+<div id="orders"></div>
+
+<script>
+
+let orders =
+JSON.parse(localStorage.getItem("orders"))
+|| [];
+
+let container =
+document.getElementById("orders");
+
+if(orders.length===0){
+
+container.innerHTML =
+"<h3>No Orders Yet</h3>";
+
+}else{
+
+orders.forEach(order=>{
+
+container.innerHTML += `
+
+<div class="order">
+
+<h3>${order.customer}</h3>
+
+<p><b>Phone:</b> ${order.phone}</p>
+
+<p><b>Total:</b> Rs. ${order.total}</p>
+
+<p><b>Date:</b> ${order.date}</p>
+
+</div>
+
+`;
+
+});
+
+}
+
+</script>
+
+</body>
+</html>
+```
